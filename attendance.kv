@@ -1,0 +1,41 @@
+<Dashboard>:
+    id: main
+    orientation:"vertical"
+    spacing: 10
+    space_x:self.size[0]/3
+    BoxLayout:
+        size_hint_y:None
+        height:50
+        Label:
+            text:"Schoolify Attendance Portal"
+            bold:True
+            size_hint_x:0.9
+        Button:
+            text:"x"
+            size_hint_x:0.1
+    Image:
+        source:"logo1.png"
+        height:250
+        pos_hint_x:0.5
+        pos_hint_y:0.5
+    BoxLayout:
+        orientation:'vertical'
+        padding:main.space_x,10
+        spacing:20
+        BoxLayout:
+            orientation:'vertical'
+            spacing:10
+            size_hint_y:None
+            height:200
+            TextInput:
+                hint_text:"Username"
+                multiline:False
+            TextInput:
+                hint_text:"Registration Number"
+                multiline:False
+            Button:
+                text:"New Registration"
+                height:40
+            Button:
+                text:"Take my attendance"
+                height:40
